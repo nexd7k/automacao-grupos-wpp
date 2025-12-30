@@ -30,7 +30,7 @@ def msg():
 
 
 print("Iniciando o programa.")
-# Ler planilha e guardar informações sobre nome, telefone e data de vencimento
+# Ler planilha e guardar informações sobre nome, id do grupo e mensagem
 workbook = openpyxl.load_workbook('clientes.xlsx')
 pagina_clientes = workbook['Sheet1']
 for linha in pagina_clientes.iter_rows(min_row=2):
@@ -41,3 +41,4 @@ for linha in pagina_clientes.iter_rows(min_row=2):
     
     #Chamar a função da mensagem
     msg()
+
